@@ -11,6 +11,11 @@ body {
     background: white;
   }
 
+  .nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
 .large {
     min-height: 500px;
     padding: 15px;

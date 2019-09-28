@@ -15,7 +15,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand btn" href="index.html">Lattitude</a>
+            <a class="navbar-brand btn" href="index.html">Understanding Lattitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,10 +27,10 @@
                     Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="plot1.html">Plot 1</a>
-                    <a class="dropdown-item" href="#">Plot 2</a>
-                    <a class="dropdown-item" href="#">Plot 3</a>
-                    <a class="dropdown-item" href="#">Plot 4</a>
+                    <a class="dropdown-item" href="plot1.html">Cloudiness</a>
+                    <a class="dropdown-item" href="plot2.html">Wind Speed</a>
+                    <a class="dropdown-item" href="plot3.html">Max. Temp.</a>
+                    <a class="dropdown-item" href="plot4.html">Hummidity</a>
                     </div>
                 </li>
                 <li class="nav-item active">
@@ -47,26 +47,34 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 col-sm-12">
-                <div class="box">
+                <div class="box shadow p-3 mb-5 bg-white rounded">
                     <h1>Overview</h1>
                     <hr>
                     <img src="weather1.png" class="rounded float-left img-fluid" alt="plot1" style="max-height: 200px;">
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloribus nam aperiam labore magnam. Quos sapiente voluptas, dolores beatae animi minus, consequuntur possimus minima modi unde nesciunt. Veniam, iure perferendis!</h3>
+                    <h3>This project analyzes changes in weather based on distance to the equator. This is accomplished by pulling data from over 500 randomly selected global cities from the OpenWeatherMap API. Data was read into a Pandas DataFrame, and visualized using MatPlotLib.</h3>
                     <br>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita eos quae facere at, ut animi illo aliquid minima nam repellat, quibusdam consectetur! At dolorum non, accusantium quo facere aspernatur!</h3>
-                    <br>
-                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, officiis mollitia! Iste ullam reprehenderit quo, quia corporis quos architecto doloribus aspernatur sunt dolorum, unde nesciunt voluptatem, ipsum assumenda totam recusandae.</h3>
+                    <h3>Relationships between weather and lattitude were determined according to four attributes: Cloudiness, Wind Speed, Maximum Daily Temperature, and Hummidity. The source data can be viewed on the "Data" page, plots of individual attributes and description of any relevant trends can be viewed under the appropriate "Plots" page. </h3>
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
-                <div class='box'>
-                    <h1>Visualization</h1>
+                <div class='box shadow p-3 mb-5 bg-white rounded'>
+                    <h1>Plots</h1>
                     <hr>
                     <div class="row">
-                            <img src="weather1.png" class="rounded float-left img-fluid" alt="plot1" style="max-width: 50%;">
-                            <img src="weather1.png" class="rounded float-left img-fluid" alt="plot1" style="max-width: 50%;">
-                            <img src="weather1.png" class="rounded float-left img-fluid" alt="plot1" style="max-width: 50%;">
-                            <img src="weather1.png" class="rounded float-left img-fluid" alt="plot1" style="max-width: 50%;">
+                        <div class='col-md-6 nopadding'>
+                                <a href="plot1.html"><img src="weather1.png" class="rounded float-left img-fluid" alt="plot1" style="max-width: 100%;"></a>    
+                        </div>
+                        <div class='col-md-6 nopadding'>
+                                <a href="plot2.html"><img src="weather2.png" class="rounded float-left img-fluid" alt="plot2" style="max-width: 100%;"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class='col-md-6 nopadding'>
+                                <a href="plot3.html"><img src="weather3.png" class="rounded float-left img-fluid" alt="plot3" style="max-width: 100%;"></a>
+                        </div>    
+                        <div class='col-md-6 nopadding'>
+                                <a href="plot4.html"><img src="weather4.png" class="rounded float-left img-fluid" alt="plot4" style="max-width: 100%;"></a>
+                        </div>
                     </div>
                 </div>
             </div>
